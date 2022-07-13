@@ -1,0 +1,53 @@
+/* Universal Style */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Top Banner */
+
+#tob_banner{
+    background-image:linear-gradient( to left,rgba(25, 23, 23, 0)0%,rgba(24, 23, 23, 0.961)100%),url(images/banner.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-top:140px;
+    margin-left: 200px;
+    width: 42%;
+}
+.banner_text h1{
+    font-size: 50px;
+    font-weight: 700;
+  
+    color: whitesmoke;
+}
+.banner_text p{
+    font-size: 18px;
+  
+    color: whitesmoke;
+}
+.btn{
+font-size: 20px;
+font-weight: 700;
+border-radius: 5px;
+background-color: rgb(173, 32, 32);
+cursor: pointer;
+padding:14px 8px;
+color: white;
+width: 160px;
+border: none;
+
+}
