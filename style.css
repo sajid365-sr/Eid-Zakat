@@ -41,16 +41,113 @@ p{
       
 }
 
+/* Header section */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+/* Logo section*/
+
+
+.logo{
+    height: 70px;
+}
+.logo img{
+height: 70px;
+width: 85px;
+}
+
+/* Menu setion */
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    gap: 55px;
+}
+nav > ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: larger;
+   letter-spacing: 3px;
+   position: relative;
+   font-weight: 600;
+   
+}
+nav > ul a:hover{
+    color: rgb(116, 184, 244);
+}
+nav > ul a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(116, 184, 244);
+    height: 2px;
+    width: 0%;
+    left: 0;
+    transition: 0.3s;
+}
+nav > ul a:hover:after{
+    width: 100%;
+}
+
+/* Social media section */
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+    
+    
+}
+.social_media ul {
+    display: flex;
+    position: relative;
+}
+.social_media a{
+    transform: scale(1.5);
+    color: #ddd
+}
+.social_media a:hover{
+    transform: scale(2);
+    transition: all 0.5s;
+    color:rgb(161, 116, 244);
+}
+.social_media a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(161, 116, 244);
+    height: 1.5px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+.social_media a:hover:after{
+   width: 100%;
+}
+
+
+
+
 /* Top Banner */
 
 #tob_banner{
     background-image:repeating-linear-gradient( to top right,rgba(0, 0, 0, 0)0%,rgba(148, 4, 4, 0.741)100%), repeating-linear-gradient( to bottom left,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.434)100%),url(images/banner.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     box-sizing: border-box;
 }
 .banner_text{
